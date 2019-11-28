@@ -4,10 +4,10 @@ import javax.swing.JOptionPane;
 
 public class ownadventure {
 public static void main(String[] args) {
-JOptionPane.showMessageDialog(null, "You are doing a choose your own adventure. you will type 1 for option 1 and 2 for option 2");	
-String one=JOptionPane.showInputDialog("You walk up to a house with a locked door. Do you break through the door or go around into a window? (1 for door, 2 for window)");
-int two=parseInt(one);
-if(two==1) {String three=JOptionPane.showInputDialog("You go through the door");}
+	JOptionPane.showMessageDialog(null, "You walk up to a creepy, abandonded house. You can walk through the foreboding door, climb the roof, or try to sneak through a window.");
+	int task = JOptionPane.showOptionDialog(null, "what do you do?", "", 0, JOptionPane.INFORMATION_MESSAGE, null,
+			new String[] { "Door", "Window", "Climb" }, null);
+if(task==0) {System.out.println("YOu almost make it up the roof, but sadly fall and smash on the pavement below. Try again");}
 
 
 
@@ -17,9 +17,6 @@ if(two==1) {String three=JOptionPane.showInputDialog("You go through the door");
 
 
 
-
-
-
 	
 	
 	
@@ -41,7 +38,8 @@ if(two==1) {String three=JOptionPane.showInputDialog("You go through the door");
 	
 	
 	
-	
+	//int task = JOptionPane.showOptionDialog(null, "Question", "Beginning", 0, JOptionPane.INFORMATION_MESSAGE, null,
+	//		new String[] { "Button1", "Button2", "Button3" }, null);
 	
 
 }
